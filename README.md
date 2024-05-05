@@ -7,13 +7,13 @@
 - Запустите приложение с помощью Python, указав нужные аргументы.
 
 ```bash
-    python main.py [arguments]
+python main.py [arguments]
 ```
 
 - Вывод описания команд в консоли.
 
 ```bash
-    python main.py -h
+python main.py -h
 ```
 
 ### Описание Команд
@@ -23,7 +23,7 @@
 - Синтаксис:
 
 ```bash
-    python main.py add <amount> <category> <date> <description>
+python main.py add <amount> <category> <date> <description>
 ```
 
 | Параметр | Описание | Тип |
@@ -36,15 +36,15 @@
 - Пример:
 
 ```bash
-    python main.py add 6000 "income" "2024-05-05" "Пополнение счета"
+python main.py add 6000 "income" "2024-05-05" "Пополнение счета"
 ```
 
 ```bash
-    python main.py add 1000004.99 "income" "2024-05-05" "Подарок"
+python main.py add 1000004.99 "income" "2024-05-05" "Подарок"
 ```
 
 ```bash
-    python main.py add 3124.99 "expense" "2024-05-05" "Покупки в продуктовом магазине"
+python main.py add 3124.99 "expense" "2024-05-05" "Покупки в продуктовом магазине"
 ```
 
 #### Команда `update` - обновляет данные в записи.
@@ -52,7 +52,7 @@
 - Синтаксис:
 
 ```bash
-    python main.py update <index> [--amount <new_amount>] [--category <new_category>] [--date <new_date>] [--description <new_description>]
+python main.py update <index> [--amount <new_amount>] [--category <new_category>] [--date <new_date>] [--description <new_description>]
 ```
 
 | Параметр | Описание | Тип |
@@ -66,7 +66,7 @@
 - Пример:
 
 ```bash
-    python main.py update 2 --amount 4700.99 --description "Покупки в продуктовом магазине и зоомагазине"
+python main.py update 2 --amount 4700.99 --description "Покупки в продуктовом магазине и зоомагазине"
 ```
 
 #### Команда `get_balance` - возвращает информацию о балансе, доходах и расходах.
@@ -74,15 +74,15 @@
 - Синтаксис:
 
 ```bash
-    python main.py get_balance
+python main.py get_balance
 ```
 
 - Вывод:
 
 ```bash
-    Balance: 1001304.0
-    Income: 1006004.99
-    Expense: 4700.99
+Balance: 1001304.0
+Income: 1006004.99
+Expense: 4700.99
 ```
 
 #### Команда `get` - выводит все существующие записи и их индексы.
@@ -90,23 +90,23 @@
 - Синтаксис:
 
 ```bash
-    python main.py get
+python main.py get
 ```
 
 - Вывод:
 
 ```bash
-    [0]
-    Amount: 6000.0.
-    Category: income.
-    Date: 2024-05-05.
-    Description: Пополнение счета.
+[0]
+Amount: 6000.0.
+Category: income.
+Date: 2024-05-05.
+Description: Пополнение счета.
 
-    [1]
-    Amount: 4700.99.
-    Category: expense.
-    Date: 2024-05-05.
-    Description: Покупки в продуктовом магазине и зоомагазине.
+[1]
+Amount: 4700.99.
+Category: expense.
+Date: 2024-05-05.
+Description: Покупки в продуктовом магазине и зоомагазине.
 ```
 
 #### Команда `get_by_key` -  позволяет получать записи и их индексы по ключевым значениям, таким как `amount`, `category`, или `date`.
@@ -125,23 +125,23 @@
 - Пример:
 
 ```bash
-    python main.py get_by_key "category" "income"
+python main.py get_by_key "category" "income"
 ```
 
 - Вывод:
 
 ```bash
-    [0]
-    Amount: 6000.0.
-    Category: income.
-    Date: 2024-05-05.
-    Description: Пополнение счета.
+[0]
+Amount: 6000.0.
+Category: income.
+Date: 2024-05-05.
+Description: Пополнение счета.
 
-    [1]
-    Amount: 1000004.99.
-    Category: income.
-    Date: 2024-05-05.
-    Description: Подарок.
+[1]
+Amount: 1000004.99.
+Category: income.
+Date: 2024-05-05.
+Description: Подарок.
 ```
 
 ### Тесты.
@@ -149,5 +149,5 @@
 - Для запуска всех тестов используйте эту команду.
 
 ```bash
-    python -m unittest discover -s tests -v
+python -m unittest discover -s tests -v
 ```
