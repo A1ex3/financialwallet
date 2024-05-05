@@ -114,7 +114,7 @@ Description: Покупки в продуктовом магазине и зоо
 - Синтаксис:
 
 ```bash
-    python main.py get_by_key <by> <value>
+python main.py get_by_key <by> <value>
 ```
 
 | Параметр | Описание | Тип |
